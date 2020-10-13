@@ -23,7 +23,7 @@ for (i in c(1:12,14:21,23:77)){
 }
 ```
 
-2. For this exercise, let's compare graph structure across the 75 villages.  Within each village, compute some (2-3) individual level graph statistics (e.g. degree) and plot the distribution for each village.  To do this, I recommend a boxplot where every box represents the village and in each box are individual level statistics individuals in each graph.  
+2. For this exercise, let's compare graph structure across the 75 villages.  Within each village, compute some (2-3) individual level graph statistics (e.g. degree) and plot the distribution for each village.  To do this, I recommend a boxplot where every box represents the village and in each box are individual level statistics for each household.   
 ```{r warning=F}
 degrees=list()
 centralities=list()
@@ -36,7 +36,7 @@ boxplot(degrees,xlab='village',ylab='degree')
 boxplot(centralities,xlab='village',ylab='closeness centrality')
 ```
 
-3. For the individual level graph statistics above, identify individuals who are extreme (either on the high or low end).  Use covariates to provide aggregate summaries of the characteristics of these individuals. 
+3. For the individual level graph statistics above, identify households who are extreme (either on the high or low end).  Use covariates to provide aggregate summaries of the characteristics of these households. 
 
 Getting outliers for degrees
 
